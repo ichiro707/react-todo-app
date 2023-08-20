@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./styles.css";
 import { InputTodo } from "./components/InputTodo";
 import { IncompleteTodo } from "./components/IncompleteTodo";
-import { completeTodos } from "./components/CompleteTodos";
+import { CompleteTodo } from "./components/CompleteTodo";
 
 export const App = () => {
   const [todoText, setTodoText] = useState("");
@@ -61,7 +61,7 @@ export const App = () => {
         onClickComplete={onClickComplete}
         onClickDelete={onClickDelete}
       />
-      <completeTodos completeTodos={completeTodos} onClickBack={onClickBack} />
+      <CompleteTodo completeTodos={completeTodos} onClickBack={onClickBack} />
     </>
   );
 };

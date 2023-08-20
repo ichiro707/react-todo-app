@@ -1,6 +1,6 @@
 import React from "React";
 
-export const InputTodo = (props) => {
+export const CompleteTodo = (props) => {
   //受け取ったpropsを扱いやすように分割代入
   const { completeTodos, onClickBack } = props;
   return (
